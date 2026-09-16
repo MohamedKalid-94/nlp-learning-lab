@@ -2,3 +2,5 @@ nltk
 spacy
 transformers
 torch
+
+scikit-learn
