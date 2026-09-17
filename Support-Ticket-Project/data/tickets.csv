@@ -1,0 +1,101 @@
+ticket_text,category
+"Hi, my order #48213 for the SmartWatch X2 hasn't arrived and it's been 2 weeks. I paid $89.99. Please refund me.",billing
+"I was charged $45.00 twice for the same purchase on March 3rd. Order #77190. Need this fixed asap.",billing
+"My invoice shows a charge of $120 but I only ordered one item, not two.",billing
+"Why was I billed $15 extra this month? My plan is supposed to be $29.99.",billing
+"I updated my card details but you still charged my old expired card, that shouldnt be possible.",billing
+"Can you send me a copy of my invoice from last month? I need it for my records.",billing
+"There's a $9.99 charge on my statement I don't recognize, can you explain what this is for?",billing
+"I paid in USD but got charged extra conversion fees I wasn't told about.",billing
+"My payment failed but the money was still deducted from my account.",billing
+"I need an itemized bill for order #55210, my accountant is asking for it.",billing
+"Please refund my order #33021, the product arrived damaged.",refund
+"I returned the item two weeks ago and still haven't received my refund of $64.50.",refund
+"Can I get a refund for the SmartWatch X2, I bought it by mistake.",refund
+"Requesting a refund for my subscription, I was charged even after cancelling.",refund
+"The refund I was promised on the phone call never showed up in my account.",refund
+"I want my money back, the product doesn't match the description at all.",refund
+"How long does a refund usually take? It's been 10 business days already.",refund
+"Refund request for order #90211 - wrong size shipped.",refund
+"I cancelled within the trial period but wasn't refunded the $19.99 charge.",refund
+"Can you refund the shipping cost too, not just the product price?",refund
+"I want to cancel my subscription immediately, I was charged $19.99 on the 5th and don't want it renewed.",subscription
+"Please downgrade my plan from Pro to Basic starting next billing cycle.",subscription
+"How do I pause my subscription for a couple months instead of cancelling?",subscription
+"My subscription auto-renewed even though I turned off auto-renew last month.",subscription
+"I'd like to upgrade to the annual plan, does that save money vs monthly?",subscription
+"Cancel my membership please, I no longer use the service.",subscription
+"I was supposed to get a discount on renewal but got charged full price.",subscription
+"Can I switch from the Family plan to Individual plan mid-cycle?",subscription
+"My free trial ended and I got charged without any warning email.",subscription
+"I want to reactivate my subscription I cancelled last month.",subscription
+"The app keeps crashin every time I open the camera feature on my phone.",technical_bug
+"Bluetooth headphones (model AirBuds Pro) won't connect to my laptop anymore after the last update.",technical_bug
+"The website freezes whenever I try to checkout, tried Chrome and Firefox, same issue.",technical_bug
+"Getting a 'server error 500' every time I try to upload a file.",technical_bug
+"The dark mode toggle doesn't actually change anything, still shows light theme.",technical_bug
+"App crashes immediately on launch after the newest iOS update.",technical_bug
+"Notifications stopped working completely on my Android device since yesterday.",technical_bug
+"The search bar returns zero results even for products I know exist.",technical_bug
+"Video playback keeps buffering even though my internet is fast.",technical_bug
+"The export to PDF button does nothing when I click it.",technical_bug
+"I cant log into my acount, it says password incorrect even tho im sure its right.",login_account
+"Two-factor authentication code never arrives on my phone, tried 5 times.",login_account
+"I forgot my password and the reset email never came, checked spam too.",login_account
+"My account got locked after too many login attempts, how do I unlock it?",login_account
+"It says my email is already registered but I've never signed up before.",login_account
+"I can't change my password, it keeps saying 'invalid current password' but I'm typing it correctly.",login_account
+"Logged in fine on my phone but keeps rejecting my password on desktop.",login_account
+"Is there a way to log in without 2FA, it's not working on my new phone.",login_account
+"My session keeps logging me out every few minutes randomly.",login_account
+"I think someone else accessed my account, I didn't log in yesterday but it shows activity.",login_account
+"Please delete my account and all my data, I no longer want to use this service.",account_deletion
+"How do I permanently remove my profile and payment info from your system?",account_deletion
+"I want all my personal data deleted under GDPR, please confirm once done.",account_deletion
+"Can you close my account? I don't need it reactivated ever.",account_deletion
+"Delete my account but keep my order history for tax purposes please.",account_deletion
+"I accidentally requested account deletion, can you cancel that request?",account_deletion
+"Remove my email from your mailing list and delete my account entirely.",account_deletion
+"How long does it take after requesting deletion for the account to actually be gone?",account_deletion
+"I want to delete my account but I'm still being charged, please stop both.",account_deletion
+"Please erase all my saved payment methods and then close the account.",account_deletion
+"My order #48213 hasn't arrived and it's been 2 weeks since it shipped.",shipping_delivery
+"Tracking says delivered but I never received the package.",shipping_delivery
+"Can I change my delivery address, the order hasn't shipped yet?",shipping_delivery
+"Package arrived completely crushed, the product inside is broken.",shipping_delivery
+"Do you ship to Canada? I don't see it as an option at checkout.",shipping_delivery
+"It's been 3 weeks and tracking hasn't updated past 'label created'.",shipping_delivery
+"I received someone else's order instead of mine, order #10233 not #48213.",shipping_delivery
+"Is express shipping available for order #77102, I need it by Friday.",shipping_delivery
+"Delivery driver left the package outside in the rain, it's soaked.",shipping_delivery
+"Can you resend my order, the tracking shows it was returned to sender.",shipping_delivery
+"Do you guys ship internationally? Thinking of ordering the Home Speaker Mini.",product_question
+"Is the SmartWatch X2 compatible with iPhone or only Android?",product_question
+"What's the battery life on the AirBuds Pro?",product_question
+"Does the Home Speaker Mini work without wifi, just bluetooth?",product_question
+"Is there a warranty included with the SmartWatch X2 purchase?",product_question
+"What sizes does the fitness tracker come in?",product_question
+"Can I use the AirBuds Pro with a Windows laptop?",product_question
+"Is the Home Speaker Mini waterproof?",product_question
+"What's the difference between the Pro and Standard version of the SmartWatch?",product_question
+"Does the fitness tracker track sleep as well as steps?",product_question
+"It would be great if you added dark mode to the mobile app.",feature_request
+"Can you add a way to export data as CSV instead of just PDF?",feature_request
+"Please add support for multiple currencies on the checkout page.",feature_request
+"Would love to see a bulk order option for business customers.",feature_request
+"Can you add Apple Pay as a payment method?",feature_request
+"It'd be nice to have a wishlist feature to save items for later.",feature_request
+"Please consider adding a dark mode toggle in settings.",feature_request
+"Could you add multi-language support, specifically Spanish?",feature_request
+"A calendar integration for delivery dates would be really useful.",feature_request
+"Can you add the option to schedule recurring orders?",feature_request
+"Just wanted to say your customer service team was really helpful yesterday, thank you!",general_feedback
+"The new app redesign looks great, much easier to navigate now.",general_feedback
+"I've been a customer for 3 years and overall really happy with the service.",general_feedback
+"Your support response time has gotten a lot slower lately, used to be same day.",general_feedback
+"Really impressed with how fast my issue got resolved today.",general_feedback
+"The checkout process feels a bit too long, too many steps.",general_feedback
+"Love the product quality, will definitely recommend to friends.",general_feedback
+"Wish there was a phone support option, chat isn't always convenient.",general_feedback
+"Great experience overall, packaging was also really nice.",general_feedback
+"The email newsletters are a bit too frequent, maybe once a week instead of daily.",general_feedback
