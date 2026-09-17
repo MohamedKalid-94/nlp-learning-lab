@@ -33,15 +33,17 @@ def _remove_urls_emails(text: str) -> str:
 def _remove_html_tags(text: str) -> str:
     return re.sub(r'<.*?>', '', text)
 
-
 def _expand_contractions(text: str) -> str:
     contractions = {
         "don't": "do not", "can't": "cannot", "won't": "will not",
         "i'm": "i am", "it's": "it is", "isn't": "is not",
-        "cant": "cannot", "im": "i am",  # ticket dataset has some typo'd forms too
+        "shouldnt": "should not", "cant": "cannot", "im": "i am",
+        "tho": "though",
     }
     for contraction, expansion in contractions.items():
-        text = text.replace(contraction, expansion)
+        # \b = word boundary, ensures we only match whole words,
+        # not substrings buried inside other words (e.g. "time" contains "im")
+        text = re.sub(r'\b' + re.escape(contraction) + r'\b', expansion, text)
     return text
 
 
