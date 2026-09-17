@@ -13,27 +13,31 @@ nlp = spacy.load("en_core_web_sm")
 
 def get_main_verb(text: str) -> str | None:
     """
-    Finds the main ACTION verb in a ticket, not just the grammatical root.
-    Skips common wrapper verbs (want/need/like) to find the real requested action.
+    Finds the main ACTION verb in a ticket - prioritizes IMPERATIVE verbs
+    (no explicit subject, e.g. "Please refund me") over other verbs, since
+    imperatives are usually the actual customer request, especially in
+    multi-sentence tickets where the request often isn't in sentence 1.
     """
     doc = nlp(text)
     wrapper_verbs = {"want", "need", "like", "would"}
 
-    root_verb = None
-    for token in doc:
-        if token.dep_ == "ROOT" and token.pos_ == "VERB":
-            root_verb = token
-            break
+    root_verbs = [token for token in doc if token.dep_ == "ROOT" and token.pos_ == "VERB"]
 
-    # If root verb is a "wrapper" verb, look for the real action verb
-    # in its dependent clause (marked by dependency label "xcomp" - open clausal complement)
-    if root_verb and root_verb.lemma_ in wrapper_verbs:
-        for child in root_verb.children:
-            if child.dep_ == "xcomp" and child.pos_ == "VERB":
-                return child.lemma_
+    # First priority: an imperative verb (no nsubj/nsubjpass child) -
+    # this is almost always the actual customer request
+    for verb in root_verbs:
+        has_subject = any(child.dep_ in ("nsubj", "nsubjpass") for child in verb.children)
+        if not has_subject and verb.lemma_ not in wrapper_verbs:
+            return verb.lemma_
 
-    if root_verb:
-        return root_verb.lemma_
+    # Second priority: check each ROOT verb, unwrap "want/need to X" patterns
+    for verb in root_verbs:
+        if verb.lemma_ in wrapper_verbs:
+            for child in verb.children:
+                if child.dep_ == "xcomp" and child.pos_ == "VERB":
+                    return child.lemma_
+        else:
+            return verb.lemma_
 
     # Fallback: first verb found anywhere
     for token in doc:
