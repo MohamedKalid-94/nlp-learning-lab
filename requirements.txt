@@ -10,3 +10,6 @@ rouge-score
 
 langchain_huggingface
 sentence-transformers
+chromadb
+
+langchain-text-splitters
