@@ -7,3 +7,6 @@ scikit-learn
 gensim
 
 rouge-score
+
+langchain_huggingface
+sentence-transformers
